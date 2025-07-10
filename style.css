@@ -1,0 +1,140 @@
+body{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    flex-wrap: wrap;
+}
+
+.first{
+    background-color: orange;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    transition: 0.8s;
+}
+.first:hover{
+    
+    transform: rotate(360deg) scale(1.5);
+    
+}
+
+.second {
+    background-color: orange;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    transition: 0.8s;
+}
+
+.second:hover {
+
+    transform: skewY(-15deg);
+
+}
+
+.third {
+    background-color: orange;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    transition: 0.8s;
+}
+.third:hover {
+
+    transform: skewX(30deg) scale(1.1);
+    
+
+}
+.fourth {
+    background-color: orange;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    transition: 0.8s;
+        transform: skewX(-10deg);
+}
+.fourth:hover{
+transform: skewX(20deg);
+}
+
+.fifth{
+    background-color: orange;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    transition: 0.8s;
+    transform: skewX(20deg);
+}
+
+.fifth:hover {
+    transform: skew(30deg, 30deg) scale(1.3) ; 
+    background-color: lightblue;
+   
+}
+.six {
+    background-color: red;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    /* transition: 0.8s; */
+    position: relative;
+}
+.six p{
+  position: absolute;
+  
+}
+.six::after{
+position: absolute;
+    content: ' ';
+    height: 250px;
+    width: 250px;
+    background-color: lightcoral;
+    z-index: -5;
+transition: 0.4s ease-out;
+border-radius: 10px;
+}
+
+.six:hover::after{
+   
+transform: rotate(22.5deg);
+}
+.six::before{
+    position: absolute;
+        content: ' ';
+            height: 250px;
+            width: 250px;
+            background-color:lightcoral;
+            z-index: -1;
+            transition:0.4s ease-out ;
+            border-radius: 10px;
+}
+.six:hover::before{
+  
+    transform: rotate(-22.5deg);
+}
